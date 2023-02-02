@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "area-lms-webpart-js-client-side-solution",
+    "id": "fae84b59-6ef8-4ba3-9c4b-cf99aecd218e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "area-lms-webpart-js description"
+      },
+      "longDescription": {
+        "default": "area-lms-webpart-js description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "area-lms-webpart-js Feature",
+        "description": "The feature that activates elements of the area-lms-webpart-js solution.",
+        "id": "ee291999-86c6-407e-a1c0-e98ac1f7b97e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/area-lms-webpart-js.sppkg"
+  }
+}

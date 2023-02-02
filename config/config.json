@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "area-lms-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/areaLmsWebpart/AreaLmsWebpartWebPart.js",
+          "manifest": "./src/webparts/areaLmsWebpart/AreaLmsWebpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AreaLmsWebpartWebPartStrings": "lib/webparts/areaLmsWebpart/loc/{locale}.js"
+  }
+}
