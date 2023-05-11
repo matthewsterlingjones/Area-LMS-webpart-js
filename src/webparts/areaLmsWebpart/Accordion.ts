@@ -32,7 +32,7 @@ const AccordionSection = (ChapterLabel:string, Chaptercolor:string, modules:modu
               modules.forEach(module => {
                 html += `<tr>
                 <td>${module.CompletionStatus}</td>
-                <td><a href="${module.ModuleLink}" target="_blank">${module.Title}</a></td>
+                <td><a style="text-decoration: none;" class="sp-css-color-CyanFont" href="${module.ModuleLink}" target="_blank">${module.Title}</a></td>
               </tr>`
               });
                 html +=`</table>
