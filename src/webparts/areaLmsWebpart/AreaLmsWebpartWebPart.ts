@@ -53,7 +53,7 @@ export default class AreaLmsWebpartWebPart extends BaseClientSideWebPart<IAreaLm
   private _getListData(userId: string): Promise<SPList> {
     return this.context.spHttpClient.get(
       this.context.pageContext.web.absoluteUrl + 
-      "/_api/web/lists/GetByTitle('StudentRecords')/Items?$select=StudentID/ID,StudentID/Title,StudentID/FirstName,StudentID/LastName,ModuleLink,CompletionStatus,ChapterID/Title,ChapterID/ChapterColor,ModuleID/Title,ModuleID/ModuleLink,ModuleID/OrderID&$filter=StudentID/ID eq '" + userId + "'&$expand=ChapterID,ModuleID,StudentID&$orderby=ChapterID/Title%20asc",
+      "/_api/web/lists/GetByTitle('StudentRecords')/Items?$select=StudentID/ID,StudentID/Title,StudentID/FirstName,StudentID/LastName,ModuleLink,CompletionStatus,ChapterID/Title,ChapterID/ChapterColor,ModuleID/Title,ModuleID/ModuleLink,ModuleID/OrderID&$filter=StudentID/ID eq '" + userId + "'&$expand=ChapterID,ModuleID,StudentID&$orderby=ChapterID/Title%20asc,ModuleID/OrderID%20asc",
       SPHttpClient.configurations.v1).then((response: SPHttpClientResponse) => {
         return response.json();
       });
